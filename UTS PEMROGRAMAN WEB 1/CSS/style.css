@@ -1,0 +1,467 @@
+
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* TAMPILAN HALAMAN */
+body {
+    font-family: Arial, sans-serif;
+    background: #e6f4ff;
+    color: #34495e;
+    min-height: 100vh;
+}
+
+/* CONTAINER LOGIN */
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* KOTAK LOGIN */
+.login-box {
+    background: #ffffff;
+    width: 100%;
+    max-width: 420px;
+    padding: 40px 35px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(72, 149, 211, 0.15);
+}
+
+/* JUDUL */
+.login-box h1 {
+    text-align: center;
+    color: #4a9ed8;
+    margin-bottom: 12px;
+    font-size: 28px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #8497a8;
+    font-size: 14px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+/* FORM */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #496579;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #c9e4f7;
+    border-radius: 9px;
+    font-size: 14px;
+    outline: none;
+    background: #f8fcff;
+}
+
+.form-group input:focus {
+    border-color: #69b7e8;
+    box-shadow: 0 0 5px rgba(105, 183, 232, 0.2);
+}
+
+/* TOMBOL LOGIN */
+.btn-login {
+    width: 100%;
+    padding: 13px;
+    background: #69b7e8;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    background: #429bd3;
+}
+
+/* LINK LOGIN */
+.login-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 22px;
+}
+
+.login-links button {
+    background: none;
+    border: none;
+    color: #429bd3;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.login-links button:hover {
+    text-decoration: underline;
+}
+
+
+/* ===============================
+   DASHBOARD
+================================ */
+
+.dashboard-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 25px;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 2px solid #c9e4f7;
+}
+
+.dashboard-header h1 {
+    color: #429bd3;
+    font-size: 25px;
+}
+
+.dashboard-header button {
+    background: #69b7e8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.dashboard-header button:hover {
+    background: #429bd3;
+}
+
+.welcome-section {
+    background: #b9e2fa;
+    padding: 35px;
+    border-radius: 15px;
+    margin: 30px 0;
+    line-height: 1.8;
+}
+
+.welcome-section h2 {
+    color: #287eb5;
+    margin-bottom: 8px;
+}
+
+.welcome-section p {
+    color: #496579;
+}
+
+.menu-dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.menu-card {
+    display: block;
+    background: white;
+    padding: 25px;
+    border-radius: 13px;
+    text-decoration: none;
+    color: #496579;
+    box-shadow: 0 4px 15px rgba(72, 149, 211, 0.12);
+    border: 1px solid #d8edfa;
+    transition: 0.3s;
+}
+
+.menu-card h3 {
+    color: #429bd3;
+    margin-bottom: 12px;
+}
+
+.menu-card p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(72, 149, 211, 0.2);
+}
+
+/* ===============================
+   KATALOG BUKU
+================================ */
+
+.stok-section,
+.tambah-stok {
+    margin: 30px 0;
+}
+
+.stok-section h2,
+.tambah-stok h2 {
+    color: #429bd3;
+    margin-bottom: 20px;
+}
+
+.katalog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+.buku-card {
+    background: white;
+    border: 1px solid #d8edfa;
+    border-radius: 13px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(72, 149, 211, 0.12);
+}
+
+.buku-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: contain;
+    padding: 15px;
+    background: #f2f9ff;
+}
+
+.buku-info {
+    padding: 18px;
+}
+
+.buku-info h3 {
+    color: #429bd3;
+    margin-bottom: 12px;
+}
+
+.buku-info p {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #496579;
+}
+
+.buku-info .harga {
+    color: #2588c5;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.tambah-stok form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    background: white;
+    padding: 25px;
+    border-radius: 13px;
+}
+
+.tambah-stok input {
+    padding: 12px;
+    border: 1px solid #c9e4f7;
+    border-radius: 8px;
+}
+
+.tambah-stok button {
+    background: #69b7e8;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.tambah-stok button:hover {
+    background: #429bd3;
+}
+
+/* ===============================
+   HALAMAN CHECKOUT
+================================ */
+
+.checkout-container {
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(72, 149, 211, 0.12);
+}
+
+.checkout-container .form-group {
+    margin-bottom: 20px;
+}
+
+.checkout-container input,
+.checkout-container select,
+.checkout-container textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #c9e4f7;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.checkout-container textarea {
+    resize: vertical;
+}
+
+.total-pesanan {
+    background: #e6f4ff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 25px 0;
+}
+
+.total-pesanan h3 {
+    color: #496579;
+    margin-bottom: 10px;
+}
+
+.total-pesanan p {
+    color: #2588c5;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* ===============================
+   TRACKING PENGIRIMAN
+================================ */
+
+.tracking-container {
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.tracking-container form {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(72, 149, 211, 0.12);
+}
+
+.tracking-container label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #496579;
+}
+
+.tracking-container input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #c9e4f7;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.tracking-container button {
+    background: #69b7e8;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.tracking-result {
+    background: white;
+    padding: 25px;
+    margin-top: 25px;
+    border-radius: 15px;
+}
+
+.tracking-result h2,
+.tracking-result h3 {
+    color: #429bd3;
+    margin-bottom: 18px;
+}
+
+.tracking-result p {
+    margin-bottom: 12px;
+    color: #496579;
+}
+
+.tracking-history {
+    border-left: 3px solid #69b7e8;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.tracking-item {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.tracking-item::before {
+    content: "";
+    position: absolute;
+    left: -27px;
+    top: 4px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #69b7e8;
+}
+
+.tracking-item h4 {
+    color: #2588c5;
+    margin-bottom: 8px;
+}
+
+.tracking-error {
+    background: #fff0f0;
+    color: #c0392b;
+    padding: 18px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* PERBAIKAN KLIK MENU DASHBOARD */
+
+.menu-dashboard {
+    position: relative;
+    z-index: 1;
+}
+
+.menu-card {
+    position: relative;
+    z-index: 2;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.menu-card h3,
+.menu-card p {
+    pointer-events: none;
+}
+
+/* PERBAIKAN TOMBOL CHECKOUT */
+
+.checkout-container button {
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.checkout-container select,
+.checkout-container input,
+.checkout-container textarea {
+    position: relative;
+    z-index: 1;
+    pointer-events: auto;
+}

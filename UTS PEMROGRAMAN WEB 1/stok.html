@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi Stok Buku</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/data.js" defer></script>
+    <script src="JS/script.js" defer></script>
+</head>
+<body>
+
+    <main class="dashboard-container">
+
+        <header class="dashboard-header">
+            <h1>Katalog Buku</h1>
+            <button onclick="window.location.href='dashboard.html'">
+                Kembali
+            </button>
+        </header>
+
+        <section class="welcome-section">
+            <h2>Informasi Stok Buku</h2>
+            <p>Berikut adalah daftar buku yang tersedia di toko kami.</p>
+        </section>
+
+        <section class="stok-section">
+            <h2>Daftar Katalog Buku</h2>
+
+            <div id="daftarBuku" class="katalog-container">
+            </div>
+        </section>
+
+        <section class="tambah-stok">
+            <h2>Tambah Stok Buku</h2>
+
+            <form id="formTambahBuku">
+                <input type="text" id="kodeBuku"
+                    placeholder="Kode Barang" required>
+
+                <input type="text" id="namaBuku"
+                    placeholder="Nama Buku" required>
+
+                <input type="number" id="stokBuku"
+                    placeholder="Jumlah Stok" min="0" required>
+
+                <input type="text" id="hargaBuku"
+                    placeholder="Harga Buku" required>
+
+                <button type="submit">Tambah Buku</button>
+            </form>
+        </section>
+
+    </main>
+
+</body>
+</html>

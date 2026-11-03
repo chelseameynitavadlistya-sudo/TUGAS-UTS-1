@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracking Pengiriman - Toko Buku Online</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/data.js" defer></script>
+    <script src="JS/script.js" defer></script>
+</head>
+<body>
+
+    <main class="dashboard-container">
+
+        <header class="dashboard-header">
+            <h1>Tracking Pengiriman</h1>
+            <button onclick="window.location.href='dashboard.html'">
+                Kembali
+            </button>
+        </header>
+
+        <section class="welcome-section">
+            <h2>Lacak Pesanan Kamu</h2>
+            <p>Masukkan nomor DO untuk melihat status pengiriman buku.</p>
+        </section>
+
+        <section class="tracking-container">
+
+            <form id="formTracking">
+                <label for="nomorDO">Nomor Delivery Order (DO)</label>
+
+                <input
+                    type="text"
+                    id="nomorDO"
+                    placeholder="Contoh: 20230012"
+                    required
+                >
+
+                <button type="submit">
+                    Lacak Pesanan
+                </button>
+            </form>
+
+            <div id="hasilTracking"></div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
